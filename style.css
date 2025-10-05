@@ -1,0 +1,23 @@
+p.ozel-yazi, .ozel-yazi {
+  color: #fffae4; /* Sarımsı bir renk */
+  font-size: 30px;
+  font-family: 'Arial', poppins;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+body {
+  font-family: 'Arial', arial;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  color: rgb(0, 0, 255);
+
+}
+
+p {
+  font-size: 18px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grafikler</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">DATA01</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home Page</a></li>
+        <li class="nav-item"><a class="nav-link active" href="grafikler.html">Grafics</a></li>
+        <li class="nav-item"><a class="nav-link" href="kaynaklar.html">Souces</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- İçerik -->
+<div class="container mt-5">
+  <h1>Grafikler</h1>
+  <p>Burada NASA yayınlarından elde edilen verilerin görselleştirmeleri olacak.</p>
+  
+  <!-- Örnek Grafik Alanı -->
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Örnek grafik
+  const ctx = document.getElementById('myChart');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['2017', '2019', '2020', '2021', '2022' , '2023'
+      ],
+      datasets: [{
+        label: 'Yayın Sayısı',
+        data: [12, 19, 3, 5, 2, 9],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+</script>
+</body>
+</html>
